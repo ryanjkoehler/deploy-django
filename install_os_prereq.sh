@@ -4,8 +4,6 @@ source ./common_funcs.sh
 
 check_root
 
-PYTHON_VERSION=3
-
 apt-get update
 apt-get upgrade
 
