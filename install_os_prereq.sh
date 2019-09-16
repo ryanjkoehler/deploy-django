@@ -18,6 +18,9 @@ echo
 exit 1
 fi
 
+apt-get update
+apt-get upgrade
+
 # Default python version to 3. OS has to have it installed.
 if [ "$PYTHON_VERSION" == "" ]; then
 PYTHON_VERSION=3
