@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# Start Initial Server Setup with Ubuntu 18.04
+# Start Automating Initial Server Setup with Ubuntu 18.04
 # Create sudo user and prepare firewall on clean Ubuntu 18.04 installation, taken from:
-# https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
-
+# https://www.digitalocean.com/community/tutorials/automating-initial-server-setup-with-ubuntu-18-04
 
 set -euo pipefail
 
@@ -80,7 +79,7 @@ ufw allow OpenSSH
 ufw --force enable
 
 exit
-# End Initial Server Setup with Ubuntu 18.04
+# Start Automating Initial Server Setup with Ubuntu 18.04
 
 
 apt-get update
