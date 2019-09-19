@@ -86,7 +86,7 @@ ufw --force enable
 apt-get update
 apt-get upgrade
 
-sudo apt install git python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl python3-venv virtualenv supervisor
+sudo apt -y install git python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl python3-venv virtualenv supervisor
 
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
