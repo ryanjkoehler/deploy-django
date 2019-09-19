@@ -79,15 +79,16 @@ ufw allow OpenSSH
 ufw --force enable
 
 # End Automating Initial Server Setup with Ubuntu 18.04
-# Note: The user login after SSH will ask for a password. Store it in Notes in LastPass just in case. I don't think it needs to be used again. 
-exit
+# Note: The user login after SSH will ask for a password. Store it in Notes in LastPass just in case. I don't think it needs to be used again.
+
+# Install all the packages we will use now
 
 apt-get update
 apt-get upgrade
 
 sudo apt install git python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl python3-venv virtualenv supervisor
 
-pip3 install --upgrade pip
-sudo pip3 install virtualenv 
+sudo -H pip3 install --upgrade pip
+sudo -H pip3 install virtualenv
 
 echo "All required packages have been installed!"
