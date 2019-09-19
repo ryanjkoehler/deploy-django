@@ -78,9 +78,14 @@ fi
 ufw allow OpenSSH
 ufw --force enable
 
-exit
-# Start Automating Initial Server Setup with Ubuntu 18.04
+# End Automating Initial Server Setup with Ubuntu 18.04
 
+# Start disable all user passwords
+# https://askubuntu.com/questions/988845/how-to-set-passwordauthentication-as-yes-through-automation
+sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]yes/c\PasswordAuthentication no" /etc/ssh/sshd_config
+sudo service sshd restart
+# End disable all user passwords
+exit
 
 apt-get update
 apt-get upgrade
