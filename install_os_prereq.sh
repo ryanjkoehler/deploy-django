@@ -79,14 +79,7 @@ ufw allow OpenSSH
 ufw --force enable
 
 # End Automating Initial Server Setup with Ubuntu 18.04
-
-# Start disable all user passwords
-# https://askubuntu.com/questions/988845/how-to-set-passwordauthentication-as-yes-through-automation
-
-sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]yes/c\PasswordAuthentication no" /etc/ssh/sshd_config
-sudo service sshd restart
-
-# End disable all user passwords
+# Note: The user login after SSH will ask for a password. Store it in Notes in LastPass just in case. I don't think it needs to be used again. 
 exit
 
 apt-get update
