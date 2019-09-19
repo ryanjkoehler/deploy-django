@@ -82,8 +82,10 @@ ufw --force enable
 
 # Start disable all user passwords
 # https://askubuntu.com/questions/988845/how-to-set-passwordauthentication-as-yes-through-automation
+
 sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]yes/c\PasswordAuthentication no" /etc/ssh/sshd_config
 sudo service sshd restart
+
 # End disable all user passwords
 exit
 
