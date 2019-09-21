@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# How to run this file from local to remote
+# ssh root@servers_public_IP "bash -s" -- < /path/to/script/file
+
 # Start Automating Initial Server Setup with Ubuntu 18.04
 # Create sudo user and prepare firewall on clean Ubuntu 18.04 installation, taken from:
 # https://www.digitalocean.com/community/tutorials/automating-initial-server-setup-with-ubuntu-18-04
