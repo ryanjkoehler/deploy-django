@@ -84,6 +84,9 @@ ufw --force enable
 # End Automating Initial Server Setup with Ubuntu 18.04
 # Note: The user login after SSH will ask for a password. Store it in Notes in LastPass just in case. I don't think it needs to be used again.
 
+# Resume the rest manually
+exit
+
 # Install all the packages we will use now
 
 apt-get update
